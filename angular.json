@@ -22,6 +22,7 @@
               }
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "server": "src/main.server.ts",
@@ -56,6 +57,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+           "options": {
+               "port": 4300
+           },
           "configurations": {
             "production": {
               "buildTarget": "ecommerce-angular:build:production"
@@ -81,6 +85,7 @@
             ],
             "styles": [
               "src/styles.css"
+
             ]
           }
         }

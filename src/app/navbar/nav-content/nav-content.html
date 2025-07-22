@@ -1,0 +1,27 @@
+<div class="w-full">
+    <div class="bg-gray-950 text-white w-full h-1/2 shadow-lg p-6" >
+
+        <div class="flex justify-around">
+            <div class="flex flex-col mt-10" *ngFor="let item of category[selectedSection].sections">
+                <h1 class="text-center font-bold text-2xl">{{item.name}}</h1>
+                <button mat-button *ngFor="let section of item.items">
+                    {{section.name}}
+                </button>
+            </div>
+            <!-- For small it hidden and for large it's block -->
+            <div class="hidden lg:block mt-6 ">
+                <div class="mb-5 ">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top rounded-md " src="https://rukminim1.flixcart.com/image/612/612/knyxqq80/salwar-kurta-dupatta/q/i/q/32-skd7385-biba-original-imag2jag2zzz3shw.jpeg?q=70" alt="">
+                </div>
+                <p class="text-gray-600">New Arrival</p>
+            </div>
+            <div class="hidden lg:block mt-6 ">
+                <div class="mb-5 ">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top rounded-md " src="https://rukminim1.flixcart.com/image/612/612/knyxqq80/salwar-kurta-dupatta/q/i/q/32-skd7385-biba-original-imag2jag2zzz3shw.jpeg?q=70" alt="">
+                </div>
+                <p class="text-gray-600">New Arrival</p>
+            </div>
+        </div>
+    </div>
+</div>
+

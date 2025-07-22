@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Home } from './home/home';
+import { Navbar } from "./navbar/navbar";
+import { MatIconModule } from '@angular/material/icon';
+import { Footer } from "./footer/footer";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Home, Navbar, MatIconModule, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
